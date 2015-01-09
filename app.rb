@@ -9,12 +9,19 @@ end
 
 get('/wordcount') do
   phrase = params.fetch('phrase')
-  @word = params.fetch('word')
-  @counter = phrase.wordcount(@word)
-  if @counter == 1
-  	@time_word = "time"
+  word = params.fetch('word')
+
+  if phrase == "" || word == ""
+    @message = "Invalid input. Please fill in both input fields."
   else
-  	@time_word = "times"
-  end
+    counter = phrase.wordcount(word)
+    if counter == 1
+      time_word = " time"
+    else
+      time_word = " times"
+    end
+    @message = "I found the word &ldquo;".concat(word).concat("&rdquo; ").concat(counter.to_s).concat(time_word).concat(" in your text.")
+  end 
+
   erb(:wordcount)
 end
