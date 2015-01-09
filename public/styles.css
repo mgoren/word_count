@@ -28,6 +28,16 @@ h3 {
   font-size: 16px;
 }
 
+.word {
+  font-weight: bold;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.error {
+  color: red;
+}
+
 .form-label {
   margin-top: 20px;
   clear: left;
@@ -45,9 +55,9 @@ h3 {
   margin-left: 15px;
   float: left;
   border-radius: 15px;
-  background-color: #6BB45C;
-	border: 1px solid #18ab29;
-	color:#ffffff;
+  background-color: #764A8E;
+	border: 1px solid #666;
+	color:#FFFEF6;
 	text-decoration:none;
 }
 
