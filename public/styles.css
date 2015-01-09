@@ -28,13 +28,13 @@ h3 {
   font-size: 16px;
 }
 
-.word {
+#word {
   font-weight: bold;
   padding-left: 1px;
-  padding-right: 1px;
+  padding-right: 2px;
 }
 
-.error {
+#error {
   color: red;
 }
 
