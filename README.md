@@ -1,4 +1,5 @@
 word_count by Mike Goren
+
 This simple web app counts the number of times a user-provided word appears in a user-provided string.
 It is intentionally case insensitive and ignores punctuation.
 
@@ -9,8 +10,8 @@ SETUP INSTRUCTIONS:
 Dependencies: Ruby Gems Sinatra and sinatra-contrib
 
 To easily setup required gems, execute the following commands in the code directory:
-gem install bundle
-bundle
+1. gem install bundle
+2. bundle
 
 ----------
 
