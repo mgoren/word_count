@@ -1,4 +1,4 @@
-word_count by Mike Goren
+word_counter by Mike Goren
 
 This simple web app counts the number of times a user-provided word appears in a user-provided string.
 It is intentionally case insensitive and ignores punctuation.
