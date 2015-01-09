@@ -13,6 +13,8 @@ get('/wordcount') do
 
   if phrase == "" || word == ""
     @message = "Invalid input. Please fill in both input fields."
+  elsif word.include?(" ")
+    @message = "Invalid input. Please search for a single word only."
   else
     counter = phrase.wordcount(word)
     if counter == 1
