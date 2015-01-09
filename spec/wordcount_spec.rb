@@ -15,8 +15,9 @@ describe('String#wordcount') do
     expect("Hello world it is early this morning in the world today.".wordcount("world")).to(eq(2))
   end
 
-  # STILL TO BE DONE:
-  # match words with punctuation
+  it("returns the correct number, even if punctuation is included in the phrase") do
+    expect("Hello, world. It is early this morning in the world!".wordcount("world")).to(eq(2))
+  end  
 
 
 end

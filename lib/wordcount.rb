@@ -2,10 +2,22 @@ class String
   define_method(:wordcount) do |special_word|
     phrase = self
     counter = 0
+    punctuation = [".",",","!","/",";",":","-"]
 
     phrase_array = phrase.split()
     phrase_array.each() do |word_to_check|
-      if word_to_check == special_word
+
+      # first strip punctuation
+      word_array = word_to_check.split("")
+      stripped_word_array = []
+      word_array.each() do |letter|
+        if ! punctuation.include?(letter)
+          stripped_word_array.push(letter)
+        end
+      end
+      stripped_word = stripped_word_array.join("")
+
+      if stripped_word == special_word
         counter += 1
       end
     end
