@@ -19,5 +19,10 @@ describe('String#wordcount') do
     expect("Hello, world. It is early this morning in the world!".wordcount("world")).to(eq(2))
   end  
 
+  it("returns the correct number, ignoring case") do
+    expect("Hello, World. It is early this morning in the world!".wordcount("WORLD")).to(eq(2))
+  end
+
+
 
 end

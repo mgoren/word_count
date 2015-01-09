@@ -1,6 +1,7 @@
 class String
   define_method(:wordcount) do |special_word|
-    phrase = self
+    phrase = self.downcase()
+    special_word.downcase!()
     counter = 0
     punctuation = [".",",","!","/",";",":","-"]
 
