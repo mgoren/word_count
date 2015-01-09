@@ -3,7 +3,7 @@ class String
     phrase = self.downcase()
     special_word.downcase!()
     counter = 0
-    punctuation = [".",",","!","/",";",":","-"]
+    punctuation = [".",",","!","/",";",":","?","-","<",">"]
 
     phrase_array = phrase.split()
     phrase_array.each() do |word_to_check|
@@ -21,6 +21,7 @@ class String
       if stripped_word == special_word
         counter += 1
       end
+    
     end
 
     return counter

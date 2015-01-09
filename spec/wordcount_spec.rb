@@ -23,6 +23,8 @@ describe('String#wordcount') do
     expect("Hello, World. It is early this morning in the world!".wordcount("WORLD")).to(eq(2))
   end
 
-
+  it("correctly ignores partial words") do
+    expect("Hello, World. It is early this morning in the worldly world!".wordcount("WORLD")).to(eq(2))
+  end
 
 end
