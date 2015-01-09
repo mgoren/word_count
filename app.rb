@@ -1,13 +1,13 @@
 require('sinatra')
 require('sinatra/reloader')
 also_reload('lib/**/*.rb')
-require('./lib/wordcount')
+require('./lib/wordcounter')
 
 get('/') do
   erb(:form)
 end
 
-get('/wordcount') do
+get('/wordcounter') do
   phrase = params.fetch('phrase')
   word = params.fetch('word')
 
@@ -26,5 +26,5 @@ get('/wordcount') do
     end
   end 
 
-  erb(:wordcount)
+  erb(:wordcounter)
 end

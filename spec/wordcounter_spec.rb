@@ -1,5 +1,5 @@
 require('rspec')
-require('wordcount')
+require('wordcounter')
 
 describe('String#wordcount') do
 
