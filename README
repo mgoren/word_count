@@ -1,0 +1,7 @@
+word_count
+
+This simple app counts the number of times a word appears in a string.
+
+TODO:
+- match words with punctuation
+- make interactive web interface
