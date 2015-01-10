@@ -4,7 +4,7 @@ written by Mike Goren - code@mortalwombat.net
 This simple web app counts the number of times a user-provided word appears in a user-provided string.
 It is intentionally case insensitive and ignores punctuation.
 
-1/9/15 - added feature to highlight the matching words found; for simpler version with only one method and without this feature, retrieve previous git commit
+1/9/15 (afternoon) - added feature to highlight the matching words found; for simpler version with only one method and without this feature, retrieve previous git commit
 
 ----------
 
