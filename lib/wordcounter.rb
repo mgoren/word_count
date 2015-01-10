@@ -4,7 +4,7 @@ class String
     phrase = self.downcase()
     special_word.downcase!()
     counter = 0
-    punctuation = [".",",","!","/",";",":","?","-","<",">"]
+    punctuation = [".",",","!","/",";",":","?","-","<",">","'","\"","(",")","[","]","{","}"]
 
     phrase_array = phrase.split()
     phrase_array.each() do |word_to_check|
@@ -32,7 +32,7 @@ class String
   # normally obviously we would not want this much code duplication
   define_method(:highlight) do |special_word|
     phrase = self
-    punctuation = [".",",","!","/",";",":","?","-","<",">"]
+    punctuation = [".",",","!","/",";",":","?","-","<",">","'","\"","(",")","[","]","{","}"]
 
     highlighted_phrase_array = []
     phrase_array = phrase.split()
