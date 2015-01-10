@@ -24,7 +24,7 @@ get('/wordcounter') do
     else
       @message = "I found the word &ldquo;<span class='word'>".concat(word).concat("</span>&rdquo; ").concat(counter.to_s).concat(" times in your text.")
     end
+    @highlighted_phrase = "<div id='phrase-container'><span id='phrase'>" + phrase.highlight(word) + "</span></div>"
   end 
-
   erb(:wordcounter)
 end
